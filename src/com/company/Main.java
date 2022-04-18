@@ -3,14 +3,7 @@ package com.company;
 
 public class Main {
 
-    public static double sredArif(List list){
-        int sred = 0;
-        Node nodeTmp = list.getHead();
-        while (nodeTmp != null) {
-            nodeTmp = nodeTmp.getNextNode();
-        }
-        return (double) sred/6;
-    }
+
     public static void main(String[] args) {
 	 /*  Node node1 = new Node(1);
         Node node2 = new Node(2);
@@ -42,7 +35,7 @@ public class Main {
             list.push((int) (Math.random() *25));
         }
         list.printList();
-        System.out.println(sredArif(list));
+        System.out.println(Task01.sredArif(list));
     }
 
 
