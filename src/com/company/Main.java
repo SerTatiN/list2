@@ -29,13 +29,34 @@ public class Main {
 //        System.out.println(node1.getValue());
 //        System.out.println(node1.getNextNode().getValue());
 //        System.out.println(node1.getNextNode().getNextNode().getValue());
-        Node node1 = new Node(5);
+
+       /* Node node1 = new Node(5);
         List list = new List(node1);
         for (int i = 0; i < 6; i++){
             list.push((int) (Math.random() *25));
+        }*/
+
+    /*    int[] array = new int[] {12, 43, 100, 4, 24, 6, 63};
+
+        Node node1 = new Node(array[0]);
+        List list = new List(node1);
+        for (int i = 1; i < array.length; i++) {
+            list.push(array[i]);
+
+     //   list.printList();
+      //  System.out.println(Task01.sredArif(list));
+        list = Task01.task04(list);
+        list.printList();*/
+
+        String[] arrayOfStrings = {"tube", "youtube", "alabama", "africa", "antarctica", "arctica", "rambler"};
+        StringNode head = new StringNode(arrayOfStrings[0]);
+        StringList list = new StringList(head);
+        for (int i = 1; i < arrayOfStrings.length; i++) {
+            list.push(arrayOfStrings[i]);
         }
-        list.printList();
-        System.out.println(Task01.sredArif(list));
+        list.printStringList();
+        System.out.println("------------");
+        System.out.println(Task01.task05(list));
     }
 
 
