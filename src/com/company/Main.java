@@ -41,7 +41,7 @@ public class Main {
         for (int i = 0; i < 6; i++){
             list.push((int) (Math.random() *25));
         }
-
+        list.printList();
         System.out.println(sredArif(list));
     }
 
