@@ -17,10 +17,11 @@ public class StringList {
     public void setHead(StringNode head) {
         this.head = head;
     }
+
     public void printStringList(){
         StringNode nodeTmp = this.head;
         while (nodeTmp != null) {
-            System.out.println(nodeTmp.getValue());
+            System.out.print(nodeTmp.getValue() + " ");
             nodeTmp = nodeTmp.getNextNode();
         }
     }

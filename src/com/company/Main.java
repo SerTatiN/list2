@@ -1,6 +1,5 @@
 package com.company;
 
-
 public class Main {
 
 
@@ -36,27 +35,44 @@ public class Main {
             list.push((int) (Math.random() *25));
         }*/
 
-    /*    int[] array = new int[] {12, 43, 100, 4, 24, 6, 63};
+       int[] array = new int[] {18, 43, 100, 4, 24, 6, 63};
 
         Node node1 = new Node(array[0]);
         List list = new List(node1);
         for (int i = 1; i < array.length; i++) {
             list.push(array[i]);
-
-     //   list.printList();
-      //  System.out.println(Task01.sredArif(list));
-        list = Task01.task04(list);
-        list.printList();*/
-
-        String[] arrayOfStrings = {"tube", "youtube", "alabama", "africa", "antarctica", "arctica", "rambler"};
-        StringNode head = new StringNode(arrayOfStrings[0]);
-        StringList list = new StringList(head);
-        for (int i = 1; i < arrayOfStrings.length; i++) {
-            list.push(arrayOfStrings[i]);
         }
-        list.printStringList();
-        System.out.println("------------");
-        System.out.println(Task01.task05(list));
+
+       list.printList();
+        System.out.println();
+      //  System.out.println(Task01.sredArif(list));
+        Task01.task041(list);
+        list.printList();
+        System.out.println();
+        Task01.task2(list);
+        list.printList();
+        System.out.println(list.getLength());
+        ListIterator lstI = new ListIterator(list);
+//        while (lstI.hasNext()) {
+//            System.out.println(lstI.next().getValue());
+//        }
+   //     lstI.forEachRemaining((node) -> System.out.println(node.getValue()));
+        System.out.println(TasksIterator.task1(lstI));
+       // String[] аrrayOfStrings = {"tube", "tube", "tube","alabama", "africa", "tube", "africau", "arctica", "arambler", "africa","tube"};
+        // String[] arrayOfStrings = {"банк", "банан", "банка", "банкир", "банкирша" };
+        String[] arrayOfStrings = {"станция", "станция", "станция"};
+        // String[] arrayOfStrings = {"станция", "стационар", "станционный"};
+        StringNode head = new StringNode(arrayOfStrings[0]);
+        StringList listSt = new StringList(head);
+        for (int i = 1; i < arrayOfStrings.length; i++) {
+            listSt.push(arrayOfStrings[i]);
+        }
+        listSt.printStringList();
+        System.out.println();
+        System.out.println("Количество слов в списке, которые начинаются и заканчиваются на одну букву = " + Task01.task05(listSt));
+        Task01.task06(listSt);
+        System.out.println("Первое слово встречается " + Task01.task07(listSt) + "раз(а)");
+        Task01.task08(listSt);
     }
 
 
